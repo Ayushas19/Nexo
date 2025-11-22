@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexa-like Voice Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Alexa-like Voice Assistant</h1>
+        <p>Say "Hey Alexa" to activate the assistant and give commands.</p>
+        <button id="manualSpeakBtn">Manual Speak</button>
+        <div id="response"></div>
+    </div>
+
+    <!-- Pop-up Modal -->
+        <div id="assistantModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Alexa is Listening...</h2>
+            <p id="modalResponse">How can I help you?</p>
+            <button id="speakBtn">Speak</button>
+            <button id="modalManualSpeakBtn">Manual Speak</button>
+            <button id="retryMicBtn" style="display:none;">Retry Microphone Access</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

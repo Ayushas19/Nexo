@@ -1,0 +1,3 @@
+- [ ] Add a custom button to the main page for triggering the assistant
+- [ ] Style the custom button uniquely in CSS
+- [ ] Make the button functional to open the modal or start recognition
